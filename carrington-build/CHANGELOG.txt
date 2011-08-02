@@ -1,0 +1,75 @@
+# Carrington Build Changelog
+
+## 1.0.1
+- fixed display of slashes in module text in admin build screen
+- fixed post callout module to utilize admin-ajax.php actions
+- added ability to override the admin enqueing of scripts by defining a function `cfct_build_admin_scripts`. (Necessary for VIP compatibility)
+- fixed issue with initialization of improperly defined or incomplete widgets
+- removed requirement that widgets have descriptions to be valid for inclusion
+
+## 1.0
+- modified moduleLoadCallbacks to accept multiple callbacks per module
+- added module-utility-class base class for modules to provide easy access to complex functionality. Including, but not limited to:
+	- post & global image search and selection
+	- in module tabs
+	- post-layout controls
+- added ability to filter module and row JS and CSS output
+- Added more default modules
+	- Loop & loop-subpages
+	- Callout & post-callout
+	- Divider
+	- Header
+	- Image, hero & gallery
+	- Notice
+	- Shortcode
+- Changing to role-based instead of integer-based user-level for readme submenu
+- added support for limiting build admin access by post type
+- Security enhancements including the application of KSES as per the user `unfiltered_html` privilege
+- Added support for non-module based js & css filtering
+- Added filterable file based module views
+- Moved placeholders.js in to admin JS core
+- Fixed IE related bugs (too many to list)
+- Added method of logging module load locations for modules to more easily reference their own location
+- Added support for limiting build admin display by post-type
+- Safeguarding against double serialized data resulting from WordPress data import routine
+
+## 0.8.7
+- Modified module loading to facilitate easier urls for modules down the road.
+- Adding pre-defined classes for basic image, header and text styles.
+- Changed load order of modules to be alphabetical based on module directory name.
+	- allows for predictable module load order based on file system layout (different file systems don't necessarily return alphabetical order).
+
+## 0.8.6
+- Changed `WP_THEME_URL` constant in `cfct_build_url()` to `get_template_directory_uri()`. `WP_THEME_URL` is not defined in WP 2.9+.
+
+## 0.8.5
+- added filter on text gathering
+- fixed json bug with UTF8 entities
+
+## 0.8.4
+- change js behavior to not prompt user when deleting an empty row
+
+## 0.8.3
+- update description of plain text module
+- add focus to plain text & html modules on module edit lightbox display
+- apply htmlentities to plain text module admin form
+
+## 0.8.2
+- include a default module that loads in object style widgets as individual modules
+- modify "legacy" widget handling to disable form save when an old style widget has to be loaded via a sidebar
+- reenabled the content filters so when the_content runs after the_excerpt we don't lose build data
+
+## 0.8.1
+- fix a bug with module reordering across blocks
+- black out content area while saves are in progress
+- revert module order to pre-save state in the event of a save error
+
+## 0.8
+- allow dragging modules between blocks and rows
+- fix for Carrington Build not honoring post-password requirements
+- various minor bug fixes
+
+## 0.5
+- added custom module options base framework
+- added Custom Class module option as a standard CB module option
+- various UI Improvements

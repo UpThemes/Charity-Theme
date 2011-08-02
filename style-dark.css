@@ -1,0 +1,115 @@
+
+/* =Global Elements
+-------------------------------------------------------------- */
+
+body { background: #212223; color: #f0f0f0; }
+
+a{ color: #5B9DFF; }
+
+a:hover, a:focus { color: #84888b }
+
+h1,h2,h3,h4,h5,h6{ color: white; }
+
+/* =Asides
+-------------------------------------------------------------- */
+
+.widget_search input[type="submit"]{ background-color: #555; color: #999; }
+
+	#primary.aside .widgetcontainer,
+	.cfct-sidebar .widgetcontainer { background: url(images/dark_aside_section_bg.jpg); }
+	
+	#newsletter #newsletter_submit { display: inline-block; width: 36px; height: 26px; border: 1px solid #8fc434; background: #9dd53a; background: -moz-linear-gradient(top, #9dd53a 0%, #a1d54f 50%, #80c217 51%, #7cbc0a 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9dd53a), color-stop(50%,#a1d54f), color-stop(51%,#80c217), color-stop(100%,#7cbc0a)); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a',GradientType=0 ); }
+	
+		#newsletter #newsletter_submit input[type=submit] { color: #f6f4ee; text-shadow: #7dab2d 2px 2px 0; }
+		
+		.cfct-block ul, .cfct-block li{ border-color: rgba(255,255,255,0.1); }
+		
+		.cfct-block .cfct-divider{ background: rgba(255,255,255,0.1); }
+		
+#secondary.aside { background: url(images/dark_secondary_aside_bg.png) top center no-repeat; }
+
+.more { background: #AC2622 url(images/light_lines_bg.png) repeat-x; text-shadow: #981d1d 2px 2px 0; box-shadow: 10px 10px 0 #5f2021; -webkit-box-shadow: 3px 3px 0 #5f2021; -moz-box-shadow: 3px 3px 0 #5f2021; }
+
+	.more:link, .more:visited, .more:hover, .more:focus { color: #fff; }
+	
+	.more:hover, .more:focus { background-color: #9f1818; }
+		
+	#events li:hover { background: #313334; }
+	
+	#events li:first-child { background: url(images/dark_aside_section_bg.jpg); }
+
+	#events .time { background: url(images/dark_events_bg.png) -60% -126px no-repeat; }
+	
+	.cfct-block #events .time { background: none; }
+	
+	#events a .time, #events h2 { color: #84888b; }
+	
+	#wrapper h2.tec-cal-title {
+		color: #fff;
+	}
+	
+	#wrapper .tec-calendar th {
+		background-color: #444;
+		color: #aaa;
+	}
+	
+	#wrapper table.tec-calendar, #wrapper .tec-calendar td, #wrapper #tec-event-meta {
+		border-color: #555;
+	}
+	
+	#wrapper .type-sp_events .article .meta{ display: none; }
+	
+	#wrapper .tec-calendar .daynum {
+		background-color: #363636;
+		color: #666;
+	}
+	
+	#wrapper .tec-calendar hr {
+		background-color: #363636;
+	}
+	
+/* =Content
+-------------------------------------------------------------- */
+
+	#content .entry-utility{ color: #ccc; color: rgba(255,255,255,0.5); }
+	
+	#content .entry-utility a{ color: rgba(255,255,255,0.4); border-bottom: 1px solid rgba(255,255,255,0.06); }
+
+	#content .entry-utility a:hover{ color: rgba(255,255,255,0.9); border-bottom: 1px solid rgba(255,255,255,0.9); }
+
+	.meta { border-top: 1px solid #444; border-bottom: 1px solid #444; color: #84888b; }
+
+		.meta .time { background: url(images/meta_sprite.png) -62px -71px no-repeat; }
+	
+		.meta .tags { background: url(images/meta_sprite.png) -62px -54px no-repeat;  }
+		
+		.entry-meta { color: #fff; color: rgba(255,255,255,0.5); }
+		
+	#comments li .comment-permalink { color: #666; }
+		
+/* =Comments
+-------------------------------------------------------------- */
+
+	#comments label { border-top: 1px solid #444; }
+	
+	#comments li .commenter, #comments li .comment{ border-top: 1px solid #444;}
+
+	#comments input[type=submit] { border:0; background: #333; color: #fff; cursor: pointer; }
+	
+		#comments input[type=submit]:hover, #comments input[type=submit]:focus { background: #444; }
+		
+		#comments input[type=submit]:active { background: #222; }
+	
+		#commentform > div#form-allowed-tags{ color: rgba(255,255,255,0.6); }
+
+
+/* =Footer
+-------------------------------------------------------------- */
+
+.advertisement, #header_ads.advertisement { background: #333; border-color: #222; box-shadow: 0 1px 0 #222; -moz-box-shadow: 0 1px 0 #222; -webkit-box-shadow: 0 1px 0 #222; }
+
+#footer { background: #292929; border-top: 1px solid #333; color: #f1f1f1; }
+
+#footer a:link, #footer a:visited { color: #a0a0a0; }
+
+#footer a:hover, #footer a:focus { color: #f1f1f1; }
