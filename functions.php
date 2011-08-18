@@ -86,7 +86,9 @@ define('THEMELIB', TEMPLATEPATH . '/library');
 require_once('admin/admin.php');
 
 // Bootstrap Carrington Build
-require_once('carrington-build/carrington-build.php');
+if ( file_exists( get_template_directory_uri() . 'carrington-build/carrington-build.php' ) {
+	require_once( 'carrington-build/carrington-build.php' );
+}
 
 // Load widgets
 require_once(THEMELIB . '/extensions/widgets.php');
