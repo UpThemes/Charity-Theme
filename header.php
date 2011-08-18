@@ -10,7 +10,17 @@
     charity_head_profile();
 
     // Creating the doc title
-    charity_doctitle();
+	if(function_exists('up_title')):
+		echo "<title>".up_title()."</title>";
+	else:
+		echo "<title>";
+		wp_title('');
+		if(!is_home())echo ' - '.get_bloginfo('name');
+		echo "</title>";
+	endif;
+	
+	/* SEO */
+	do_action('up_seo');
     
     // Creating the content type
     charity_create_contenttype();
