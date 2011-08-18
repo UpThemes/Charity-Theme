@@ -1,0 +1,16 @@
+.cfct-block-a,
+.cfct-block-b,
+.cfct-block-c {
+	width: 33.3%;
+}
+.cfct-block-ab,
+.cfct-block-bc {
+	width: 66.6%;
+}
+.cfct-block-abc {
+	width: 100%;
+}
+.cfct-block-d,
+.cfct-block-e {
+	width: 50%;
+}
