@@ -439,7 +439,7 @@ function charity_header() {
 						'container_id'		=> 'primary-menu',
 						'container_class'	=> 'nav',
 						'menu_class'		=> 'sf-menu',
-						'fallback_cb'		=> 'wp_page_menu',
+						'fallback_cb'		=> 'charity_page_menu',
 						'echo'				=> false
 					));
                 }
@@ -454,7 +454,7 @@ function charity_header() {
                                     'theme_location'	=> 'secondary-menu',
                                     'container'			=> false,
                                     'menu_class'		=> 'sf-menu',
-                                    'fallback_cb'		=> 'wp_page_menu',
+                                    'fallback_cb'		=> 'charity_page_menu',
                                     'echo'				=> false
                 )); ?>
             
@@ -466,6 +466,17 @@ function charity_header() {
 	}
 
     add_action('charity_header','charity_access',9);
+
+/**
+ * Custom callback for wp_nav_menu
+ */
+function charity_page_menu() {
+	echo '<ul class="sf-menu">';
+	wp_list_pages( array(
+		'title_li'	=> ''
+	) );
+	echo '</ul>';
+}
     
 // End of functions that hook into charity_header()
 
