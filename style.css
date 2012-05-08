@@ -40,6 +40,8 @@ sup { height: 0; line-height: 1; vertical-align: baseline; position: relative; f
 input, textarea, input[type=submit] { font-family: 'Droid Sans', Arial, Verdana, Sans-Serif; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; line-height: 1.5em }
 
 .alignleft { float: left; margin: 0 14px 14px 0; }
+.alignright { float: right; margin: 0 0 14px 14px; }
+.aligncenter { display:block; clear:both; margin: 0px auto; }
 
 #wrapper { margin: 20px auto 20px; width: 960px; overflow: auto;}
 
